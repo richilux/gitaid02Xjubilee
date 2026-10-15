@@ -1,0 +1,89 @@
+/****** Global Styles ******/
+/*Save normalize AND main file
+body {
+    background-color: pink;
+}
+to see changes in demo browser!*/
+/*Add & remove ellipsis segments to "manually toggle"*/
+*{
+    outline: 3px dotted red;
+}
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: #5e5d5e;
+}
+/*content wrapper, not body!*/
+.content-wrapper {
+    width: 1200px; /* see grid+outline: fix full rendering width, not auto*/
+    margin: 0 auto;
+    overflow: auto; /*use this, not display property*/
+}
+/****** Header Styles ******/
+/*If background image, need to specify background before img*/
+.homepage-hero {
+    background: url=('..img/full-background.png') #f9efef;
+    /*Put content and fallback inside background element*/
+    /*background-color: yellow; Now you don't need this line!*/
+    height: auto;
+    width: auto;
+    align-content: center;
+    }
+/*specify header first to distinguish from non-header h1s later*/
+header h1 {
+    float: left;
+    width: 300px;
+    font-family: 'Lora', serif; /*special for h1, don't forget (non)serif attribute*/
+    font-size: 30px; 
+    color: #7b7e54; /*special for h1*/
+    padding-left: 65px 0 65px 25px; /*on grid, dark stripes w/ px = padding indicators */
+}
+/*why specify header nav if there is no other nav section?*/
+header nav {
+    width: 800px;
+    float: right;
+    text-align: right; /*align text not items, and to right for consistency?*/
+    padding: 75px 25px 75px 0; /* same idea as above*/
+    /*why not 80 for padding left? 80px is for intra-li, not ul block*/
+}
+/*no properties to specify for nav ul 2nd level?*/
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #727172;
+    padding: 80px; /*not 25, see above; is 80px answer to intra-item question?*/
+}
+header h2{
+    width: 960px;
+    clear: both;
+    font-family: 'Lora', serif; /*Put single apostrophes around specialty imports from Google Fonts*/
+    font-size: 72px;
+    line-height: 80px;
+    color: #817F80;
+    padding-left: 25px;
+    text-align: left; /*needed because text default centers; why?*/
+    /*header element in middle of page: indicates structural CSS problems earlier?*/
+}
+/****** About Styles ******/
+
+
+
+
+
+
+
+
+
+/****** Skill Styles ******/
+
+
+
+
+
+
+
+
+
+/****** Contact Styles ******/
